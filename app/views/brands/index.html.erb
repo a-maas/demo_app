@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1>T-Shirt Brands</h1>
+<%= link_to 'New Brand', new_brand_path %>
+
+<h2>Active Brands</h2>
+<div class="brands" id="active_brands">
+  <%= render @active_brands %>
+</div>
+
+<h2>Inactive Brands</h2>
+<div class="brands" id="inactive_brands">
+  <%= render @inactive_brands %>
+</div>
