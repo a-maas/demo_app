@@ -1,0 +1,4 @@
+$('#edit_brand_<%= @brand.id %>').remove();
+$('#brand_<%= @brand.id %>').replaceWith("<%= j render(@brand) %>");
+if( "<%= @brand.active_to_s %>_brands" != $('#brand_<%= @brand.id %>').parent().attr('id') )
+  $('#<%= j @brand.active_to_s %>_brands').append( $('#brand_<%= @brand.id %>') );

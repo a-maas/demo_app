@@ -1,5 +1,5 @@
 <div class="brand" id="brand_<%= brand.id %>">
   <%= brand.name %> |
-  <%= link_to 'Edit', edit_brand_path(brand) %>
-  <%= link_to 'Delete', brand, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to 'Edit', edit_brand_path(brand), remote: true %>
+  <%= link_to 'Delete', brand, method: :delete, data: { confirm: 'Are you sure?' }, remote: true %>
 </div>
